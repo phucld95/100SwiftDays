@@ -1,0 +1,267 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+//MARK:- Test Optional and Implicitly unwrapping optional.
+/**
+ Sự khác biệt giữa chấm than và chấm hỏi
+ 
+ 
+ Optional (?)
+    1.Trong khai báo biến, “?” có nghĩa là ta nói rằng biến đó có khả năng bị nil chứ không phải lúc nào cũng có giá trị (hoặc con trỏ gán vào). Ví dụ nếu UIViewController chạy độc lập thì biến navigationController của nó sẽ là nil.
+    2.Trong câu lệnh thông thường, dấu “?” xuất hiện báo hiệu rằng nếu biến đó đang là nil thì toàn bộ những gì sau “?” sẽ không được thực thi, app sẽ không crash.
+    3.“?” hoạt động như 1 màng mana shield (lá chắn phép trong game :D) bảo vệ cái biến đó. Vì thế sẽ có khái niệm wrapping và unwrapping mà khi tới “!” ta sẽ hiểu hơn.
+ 
+Optional<Wrapped> được hiểu như là một cơ ché bảo vệ là một lớp bên ngoài tồn tại 2 trạng thái hoặc là "Đây là một thuộc tính có kiểu dữ liệu x (không nil)" hoặc là "Đây không phải là một thuộc tính nào cả (nil)"
+ Khi một biến được khai báo thuộc kiểu Optinal, trước khi sử dụng biến này (truy cập đến địa chỉ, yêu cầu lấy dữ liệu) thì chương trình mặc định phải chạy qua 1 lệnh kiểm tra biến đấy có nil hay không.
+Có 2 cách để khai báo 1 biến thuộc Optional Type là:
+ var optionalInteger: Int?
+ var optionalInteger: Optional<Int>
+ 
+ 
+
+ 
+Implicitly unwrapped optional type (­!)­
+
+ Về cơ bản ta dùng “!” khi cực kỳ chắc chắn rằng biến có “!” sẽ luôn luôn có giá trị. Biến có “!” trên thực tế ta có thể hiểu nó là biến optional nhưng luôn được unwrap (không được bảo vệ). Tức là nếu để ! thì chương trình sẽ tự hiểu là biến luôn có dữ liệu và bỏ qua bước kiểm tra mỗi khi truy xuất dữ liệu. Việc này sẽ giúp cho chương trình có hiệu năng cao hơn.
+
+ 
+ **/
+
+struct hument {
+    let name: String
+    let old: Int
+}
+
+var phuc:hument? = hument(name: "Le Phuc", old: 21)
+
+phuc = nil
+
+if phuc?.name == "Le Phuc"{
+    print("Nếu không khai báo kiểu optional thì khi chạy tới đây chương trình sẽ bị crash bởi vì ta đã yêu cầu lấy dữ liệu từ 1 biến nil")
+}
+
+print("Bằng chứng là đã vượt qua if mà không bị crash.")
+
+//var saoly:hument = hument(name: "Sao Ly", old: 20)
+//
+//saoly = phuc!
+//
+//if saoly.name == "Sao Ly"{
+//    print("Chạy tới đây là chắc chắn sẽ bị crash do ta đã khai báo mặc định bỏ qua bước wraping")
+//}
+//
+//print("Bằng chứng là không vượt qua.")
+
+//var saoly:hument! = hument(name: "Sao Ly", old: 20)
+//
+//saoly = nil
+//
+//if saoly!.name == "Sao Ly"{
+//    print("Chạy tới đây là chắc chắn sẽ bị crash do ta đã khai báo mặc định bỏ qua bước wraping")
+//}
+//
+//print("Bằng chứng là không vượt qua.")
+
+
+func testWithFunc(name: String) -> hument? {
+    var phuc:hument? = hument(name: name, old: 21)
+    phuc = nil
+    return phuc
+}
+
+//let phuc2:hument = testWithFunc("Phuc")
+// Ở đây sẽ bị báo lỗi bởi vì mặc định khi khao báo biến mà không sử dụng Optional thì sẽ không được phép gán biến = nil
+// Thế nếu ta thêm dấu chấm cảm vào sao lời gọi hàm thì sao? (Cố ý nói vs nó là hàm này sẽ luôn trả về khác nil)
+//let phuc2:hument = testWithFunc("Phuc")!
+// Sẽ sảy ra lỗi run time! Đơn giản vì cháu nó bị nil.
+// Thế nếu ta thêm dấu chấm hỏi cho kiểm tra trước khi gán thì sao? Vì trong trường hợp này thực sự nó sẽ trả về nil.
+//let phuc2:hument = (testWithFunc("Phuc"))?
+// Swift sẽ không cho phép điều này bởi vì nó đã lường trước được trường hợp có thể bị nil. Nên sẽ quy cái này vào sai cú pháp. Nó sẽ gợi ý ta thêm chấm than vào cuối nhưng sẽ vẫn bị lỗi run time như ở ví dụ ngay phía trên bởi vì dù có thêm dấu hỏi chấm vào thì vẫn không thay đổi được phép gán ở phía trước.
+// Thế nếu ta thêm dấu chấm than sau biến thì sao? (Nói cho nó là biến này sẽ không bao h bị nil.)
+
+//let phuc2:hument! = testWithFunc("Phuc")
+// Tất nhiên là sẽ vượt qua ở bước gán nhưng sẽ gặp phải lỗi run time ngay khi chúng ta truy xuất biến ở dưới.
+
+let phuc2:hument! = testWithFunc("Phuc")
+// Và đương nhiên khi chúng ta cho wrapping ở dưới khi truy xuất đến biến chương trình sẽ chạy qua ngon lành.
+// Từ ví dụ trên thì ta có thể thấy được rằng. Khai báo ở biến là chấm cảm hay hỏi chấm đều không quan trọng. quan trọng là khi chúng ta truy xuất đến dữ liệu chúng ta sẽ sử dụng dấu nào. Tôi khuyến khích nên chọn wrapping để tăng tính an toàn cho chương trình. (tuy có chậm hơn unwrapping 1 chút)
+
+print("Vượt qua: \(phuc2?.name)")
+
+//MARK:- Test function
+
+
+// Khi để dấu hỏi chấm trong biến đầu vào như dưới đây thì có ý nghĩa gì?
+// Tại sao khi để biến thứ nhất là ! thì chương trình lại bị crash?
+// Đơn giản vì khi để ! thì chương trình đã mặc định khác nil và bỏ qua bước wrapping nên dẫn tới bị crash khi truy xuất dữ liệu.
+// Để ý nếu ta để dấu hỏi chấm sau giá trị trả về thì biến trả về là Optional(3) chứ k phải là 3 nữa. Khá là thú vị. :D
+
+func findMax(first: Int?, second: Int?) -> Int? {
+    if let n1 = first {
+        return n1 > second ? n1 : second
+    }else{
+        return second
+    }
+}
+
+print("Kết quả: \(findMax(nil, second: 3))")
+
+// Test trường hợp tham số đầu vào là không biết trước số lượng giá trị.
+
+func findMaxInList(list: Int?...) -> Int? {
+    var max = list[0]
+    for numb in list {
+        print("Max = \(max), numb = \(numb)")
+        if numb > max {
+            print("so sánh")
+            max = numb
+        }
+    }
+    return max
+}
+
+print("Kết quả: \(findMaxInList(nil,nil,-1000000000000,4,5,6))")
+
+// Qua trường hợp này chúng ta thấy được là swift nó rất là khôn. trường hợp có wrapping thấy bị nil là nó nhảy qua luôn việc truy xuất. Nó coi nil là 1 giá trị cực cực nhỏ. Không tin có thể thay dấu lớn hơn bằng dấu nhỏ hơn. Chúng ta sẽ có 1 kết quả là nil.
+
+// Test một vài trường hợp mở rộng hay ho.
+// Khi chúng ta muốn cho một đoạn text gợi nhớ để lời gọi hàm giống 1 câu văn hơn.
+func findMax2(Between first: Int?, and second: Int?) -> Int? {
+    if let n1 = first {
+        return n1 > second ? n1 : second
+    }else{
+        return second
+    }
+}
+
+findMax2(Between: 12, and: 13)
+
+
+// Khi chúng ta chẳng muốn nó gợi nhớ cái quái gì giống C cùi.
+//func minWillToWill(first: Int?, _ second: Int?) {
+//    if first < second {
+//        first = second
+//    }
+//    else{
+//        second = first
+//    }
+//}
+// thông qua ví dụ trên ta thấy rằng swift giống như java tức là khi chúng ta truyền param vào thì thực chất là swift đã copy lại giá trị param đó và mặc định là let (hằng số)
+// Thế nếu chúng ta muốn truyền vào con trỏ để tương tác thì cần làm như thế nào?
+// Hãy sử dụng từ khóa inout để truyền trực tiếp địa chỉ của tham số vào trong hàm.
+func minWillToWill(inout first: Int, inout _ second: Int) {
+    if first < second {
+        first = second
+    }
+    else{
+        second = first
+    }
+}
+
+var numb1 = 4
+var numb2 = 5
+
+minWillToWill(&numb1, &numb2)
+print("Numb1: \(numb1) and Numb2: \(numb2)")
+
+
+
+
+
+/**
+ Khái niệm về tuple. Tuple là phần trả về của 1 hàm trong swift. Đây là giải pháp của swift sử dụng để trả về nhiều kết quả 1 lúc. Khi chúng ta sử dụng Tuple sẽ tương ứng với việc chúng ta tạo 1 struct và dữ liệu trả về sẽ thuộc kiểu struct đó.
+ **/
+func maxMin(list : Int?...) -> (max:Int?, min:Int?) {
+    var max = list[0]
+    var min = list[0]
+    
+    for numb in list{
+        if numb > max {
+            max = numb
+        }
+        if numb < min {
+            min = numb
+        }
+    }
+    return (max, min)
+}
+
+let result = maxMin(nil,nil,1,2,3,4,nil,5,6,7)
+print("Max = \(result.max) và Min = \(result.1)")
+// Ở đây có 1 cái rất hay đó là ta có thể truy cập dữ liêu trong tuple thông qua việc chỉ ra cụ thể thứ tự của biến trả về trong tuple.
+// Ở đây ta thấy giá trị min trả về bằng nil đơn giản bởi vì swift coi nil là giá trị vô cùng bé.
+
+
+
+/**
+ Khái niệm nested funtion.
+ Một funtion có thể được viết trong 1 funtion khác. Kĩ thuật này hay được sử dụng để làm ngắn lại những hàm dài.
+ nested function có khả năng sử dụng các biến của func chứa nó. (Kiểu như lúc này func chứa sẽ là chương trình chính, nested func sẽ là 1 hàm của chương trình này.)
+ **/
+func testNestedFunc() -> Int {
+    var y = 10
+    func add() {
+        y += 5
+    }
+    add()
+    if y < 50 {
+        add()
+    }
+    if y == 50 {
+        add()
+    }
+    add()
+    return y
+}
+testNestedFunc()
+
+/**
+ Trong swift func cũng được coi như là 1 kiểu biến. Vì thế chúng ta có thể sử dụng func như 1 hàm đầu vào hoặc là tham số trả về. (khá là giống block nhỉ) :D
+ **/
+
+func perform(param1 a:Float?, param2 b:Float?, function c:(Float,Float)->Float) -> Float {
+    return c(a!,b!)
+}
+
+func plus(a: Float, b: Float) -> Float {
+    return a+b
+}
+
+
+
+
+
+
+
+perform(param1: 14, param2: 15, function: plus)
+
+func howToDoThat() -> ((Float, Float) -> Float) {
+    func subtract(a: Float, b: Float) -> Float {
+        return a+b
+    }
+    return plus
+//    return subtract
+}
+
+print("Đáp án là: \(howToDoThat)")
+// Thậm chí chúng ta còn có thể gán nó như 1 biến bình thường.
+let funtion:(Float, Float)->Float = howToDoThat()
+
+/**
+ Closures:
+ Closures giống như là block trong objective-C
+ Closures có thể sử dụng được tất cả các hằng số và biến được khai báo trong phạm vi chứa closures. Không những có thể sử dụng clusures còn có thể tham chiếu tới cũng như thay đổi nội dung từ trong thân hàm của mình.
+ Để tối ưu hóa, thay vì copy và sử dụng một dữ liệu kiểu mutable
+ 
+ **/
+
+
+
+
+
+
+
+
+
+

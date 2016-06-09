@@ -251,15 +251,95 @@ let funtion:(Float, Float)->Float = howToDoThat()
 /**
  Closures:
  Closures giống như là block trong objective-C
+ Function là một trường hợp đặc biệt của closures
  Closures có thể sử dụng được tất cả các hằng số và biến được khai báo trong phạm vi chứa closures. Không những có thể sử dụng clusures còn có thể tham chiếu tới cũng như thay đổi nội dung từ trong thân hàm của mình.
  Để tối ưu hóa, thay vì copy và sử dụng một dữ liệu kiểu mutable
- 
+ Cú pháp dùng để khai báo 1 closues:
+ { (parameters) -> return type in
+ statements
+ }
  **/
 
 
+let closures = ({ (a:Int, b:Int)->Int in
+    return a+b
+})
+
+print("Closures = \(closures(1,2))")
+
+// Closures rất linh động trong cách khai báo. Chúng ta còn có thể khai báo trực tiếp như sau.
+
+let closues2:((Int, Int)->(Int)) = {
+    $1
+}
+
+// Clusures làm việc với kiểu tham chiếu. tức là các biến được tạo với kiểu closues sẽ có dạng tham chiếu. khi ta làm the
+
+var a = 10
+a = a + 1
+var b = a
+
+b = 12
+print("\(a)")
 
 
+// Ở đây chúng ta đã gán sum2 là 1 kiểu closures.
+var sum2 = ({()->Int in
+    var num = 10
+    func plus(a:Int) -> Int {
+        return a+2
+    }
+    return plus(num)
+    
+})
 
+sum2()
+sum2()
+
+
+print("Test địa chỉ")
+func makeIncrementer(forIncrement amount: Int) -> () -> Int {
+    var runningTotal = 0
+    print("\(runningTotal)")
+    func incrementer() -> Int {
+        runningTotal += amount
+        return runningTotal
+    }
+    return incrementer
+}
+
+let incrementByTen = makeIncrementer(forIncrement: 10)
+
+incrementByTen()
+// returns a value of 10
+incrementByTen()
+// returns a value of 20
+incrementByTen()
+// returns a value of 30
+
+var inc = incrementByTen
+inc()
+incrementByTen()
+
+// qua đây chúng ta thấy được bản chất biến closues là một kiểu con trỏ (biến lưu lại địa chỉ của vùng nhớ thực hiện chức năng được định nghĩa trong closues). ví dụ như ở trên thì vùng nhớ này có bao gồm cả vùng nhớ chứa biến runningTotal. Vậy nên khi gọi tới biến incrementByTen nó vẫn có runningTotal để cộng mà không cần truyền vào. Quả là rất thú vị. :D
+
+
+/**
+ Nonescaping Closures:
+ Đây là cách để swift chắc chắn rằng closures của bạn sẽ được thực hiện đến khi kết thúc mà không bị bất kì một yếu tố nào khiến nó bị ngắt (cái này khó hiểu vc) một trong số các yêu tố có thể khiến closues dừng giữa chừng đó là kĩ thuật asynchronous.
+ Để thực hiện điều này chỉ cần thêm từ khóa @noescape trước closues cần sử dụng.
+ **/
+
+// Ví dụ như sau:
+
+func someFunctionWithNonescapingClosure(@noescape closure: () -> Void) {
+    closure()
+}
+
+var completionHandlers: [() -> Void] = []
+func someFunctionWithEscapingClosure(completionHandler: () -> Void) {
+    completionHandlers.append(completionHandler)
+}
 
 
 

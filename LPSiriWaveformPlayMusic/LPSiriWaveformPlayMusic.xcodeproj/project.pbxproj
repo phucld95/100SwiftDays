@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71FF23661D096430001C42EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF23651D096430001C42EA /* AppDelegate.swift */; };
+		71FF23681D096430001C42EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF23671D096430001C42EA /* ViewController.swift */; };
+		71FF236B1D096430001C42EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FF23691D096430001C42EA /* Main.storyboard */; };
+		71FF236D1D096430001C42EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FF236C1D096430001C42EA /* Assets.xcassets */; };
+		71FF23701D096430001C42EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FF236E1D096430001C42EA /* LaunchScreen.storyboard */; };
+		71FF237B1D096430001C42EA /* LPSiriWaveformPlayMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF237A1D096430001C42EA /* LPSiriWaveformPlayMusicTests.swift */; };
+		71FF23861D096430001C42EA /* LPSiriWaveformPlayMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF23851D096430001C42EA /* LPSiriWaveformPlayMusicUITests.swift */; };
+		71FF23941D096A54001C42EA /* LPSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF23931D096A54001C42EA /* LPSiriWaveformView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71FF23771D096430001C42EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71FF235A1D096430001C42EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71FF23611D096430001C42EA;
+			remoteInfo = LPSiriWaveformPlayMusic;
+		};
+		71FF23821D096430001C42EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71FF235A1D096430001C42EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71FF23611D096430001C42EA;
+			remoteInfo = LPSiriWaveformPlayMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71FF23621D096430001C42EA /* LPSiriWaveformPlayMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPSiriWaveformPlayMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FF23651D096430001C42EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71FF23671D096430001C42EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71FF236A1D096430001C42EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71FF236C1D096430001C42EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71FF236F1D096430001C42EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71FF23711D096430001C42EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71FF23761D096430001C42EA /* LPSiriWaveformPlayMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPSiriWaveformPlayMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FF237A1D096430001C42EA /* LPSiriWaveformPlayMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPSiriWaveformPlayMusicTests.swift; sourceTree = "<group>"; };
+		71FF237C1D096430001C42EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71FF23811D096430001C42EA /* LPSiriWaveformPlayMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPSiriWaveformPlayMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FF23851D096430001C42EA /* LPSiriWaveformPlayMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPSiriWaveformPlayMusicUITests.swift; sourceTree = "<group>"; };
+		71FF23871D096430001C42EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71FF23931D096A54001C42EA /* LPSiriWaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPSiriWaveformView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71FF235F1D096430001C42EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FF23731D096430001C42EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FF237E1D096430001C42EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71FF23591D096430001C42EA = {
+			isa = PBXGroup;
+			children = (
+				71FF23641D096430001C42EA /* LPSiriWaveformPlayMusic */,
+				71FF23791D096430001C42EA /* LPSiriWaveformPlayMusicTests */,
+				71FF23841D096430001C42EA /* LPSiriWaveformPlayMusicUITests */,
+				71FF23631D096430001C42EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71FF23631D096430001C42EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71FF23621D096430001C42EA /* LPSiriWaveformPlayMusic.app */,
+				71FF23761D096430001C42EA /* LPSiriWaveformPlayMusicTests.xctest */,
+				71FF23811D096430001C42EA /* LPSiriWaveformPlayMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71FF23641D096430001C42EA /* LPSiriWaveformPlayMusic */ = {
+			isa = PBXGroup;
+			children = (
+				71FF23651D096430001C42EA /* AppDelegate.swift */,
+				71FF23671D096430001C42EA /* ViewController.swift */,
+				71FF23691D096430001C42EA /* Main.storyboard */,
+				71FF236C1D096430001C42EA /* Assets.xcassets */,
+				71FF236E1D096430001C42EA /* LaunchScreen.storyboard */,
+				71FF23711D096430001C42EA /* Info.plist */,
+				71FF23931D096A54001C42EA /* LPSiriWaveformView.swift */,
+			);
+			path = LPSiriWaveformPlayMusic;
+			sourceTree = "<group>";
+		};
+		71FF23791D096430001C42EA /* LPSiriWaveformPlayMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				71FF237A1D096430001C42EA /* LPSiriWaveformPlayMusicTests.swift */,
+				71FF237C1D096430001C42EA /* Info.plist */,
+			);
+			path = LPSiriWaveformPlayMusicTests;
+			sourceTree = "<group>";
+		};
+		71FF23841D096430001C42EA /* LPSiriWaveformPlayMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71FF23851D096430001C42EA /* LPSiriWaveformPlayMusicUITests.swift */,
+				71FF23871D096430001C42EA /* Info.plist */,
+			);
+			path = LPSiriWaveformPlayMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71FF23611D096430001C42EA /* LPSiriWaveformPlayMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71FF238A1D096430001C42EA /* Build configuration list for PBXNativeTarget "LPSiriWaveformPlayMusic" */;
+			buildPhases = (
+				71FF235E1D096430001C42EA /* Sources */,
+				71FF235F1D096430001C42EA /* Frameworks */,
+				71FF23601D096430001C42EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPSiriWaveformPlayMusic;
+			productName = LPSiriWaveformPlayMusic;
+			productReference = 71FF23621D096430001C42EA /* LPSiriWaveformPlayMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71FF23751D096430001C42EA /* LPSiriWaveformPlayMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71FF238D1D096430001C42EA /* Build configuration list for PBXNativeTarget "LPSiriWaveformPlayMusicTests" */;
+			buildPhases = (
+				71FF23721D096430001C42EA /* Sources */,
+				71FF23731D096430001C42EA /* Frameworks */,
+				71FF23741D096430001C42EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71FF23781D096430001C42EA /* PBXTargetDependency */,
+			);
+			name = LPSiriWaveformPlayMusicTests;
+			productName = LPSiriWaveformPlayMusicTests;
+			productReference = 71FF23761D096430001C42EA /* LPSiriWaveformPlayMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71FF23801D096430001C42EA /* LPSiriWaveformPlayMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71FF23901D096430001C42EA /* Build configuration list for PBXNativeTarget "LPSiriWaveformPlayMusicUITests" */;
+			buildPhases = (
+				71FF237D1D096430001C42EA /* Sources */,
+				71FF237E1D096430001C42EA /* Frameworks */,
+				71FF237F1D096430001C42EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71FF23831D096430001C42EA /* PBXTargetDependency */,
+			);
+			name = LPSiriWaveformPlayMusicUITests;
+			productName = LPSiriWaveformPlayMusicUITests;
+			productReference = 71FF23811D096430001C42EA /* LPSiriWaveformPlayMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71FF235A1D096430001C42EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lê Phúc";
+				TargetAttributes = {
+					71FF23611D096430001C42EA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					71FF23751D096430001C42EA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DJQ98MQWQ5;
+						TestTargetID = 71FF23611D096430001C42EA;
+					};
+					71FF23801D096430001C42EA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DJQ98MQWQ5;
+						TestTargetID = 71FF23611D096430001C42EA;
+					};
+				};
+			};
+			buildConfigurationList = 71FF235D1D096430001C42EA /* Build configuration list for PBXProject "LPSiriWaveformPlayMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71FF23591D096430001C42EA;
+			productRefGroup = 71FF23631D096430001C42EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71FF23611D096430001C42EA /* LPSiriWaveformPlayMusic */,
+				71FF23751D096430001C42EA /* LPSiriWaveformPlayMusicTests */,
+				71FF23801D096430001C42EA /* LPSiriWaveformPlayMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71FF23601D096430001C42EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FF23701D096430001C42EA /* LaunchScreen.storyboard in Resources */,
+				71FF236D1D096430001C42EA /* Assets.xcassets in Resources */,
+				71FF236B1D096430001C42EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FF23741D096430001C42EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FF237F1D096430001C42EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71FF235E1D096430001C42EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FF23941D096A54001C42EA /* LPSiriWaveformView.swift in Sources */,
+				71FF23681D096430001C42EA /* ViewController.swift in Sources */,
+				71FF23661D096430001C42EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FF23721D096430001C42EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FF237B1D096430001C42EA /* LPSiriWaveformPlayMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FF237D1D096430001C42EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FF23861D096430001C42EA /* LPSiriWaveformPlayMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71FF23781D096430001C42EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71FF23611D096430001C42EA /* LPSiriWaveformPlayMusic */;
+			targetProxy = 71FF23771D096430001C42EA /* PBXContainerItemProxy */;
+		};
+		71FF23831D096430001C42EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71FF23611D096430001C42EA /* LPSiriWaveformPlayMusic */;
+			targetProxy = 71FF23821D096430001C42EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71FF23691D096430001C42EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71FF236A1D096430001C42EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71FF236E1D096430001C42EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71FF236F1D096430001C42EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71FF23881D096430001C42EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71FF23891D096430001C42EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71FF238B1D096430001C42EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LPSiriWaveformPlayMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.LPSiriWaveformPlayMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71FF238C1D096430001C42EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LPSiriWaveformPlayMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.LPSiriWaveformPlayMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71FF238E1D096430001C42EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LPSiriWaveformPlayMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.LPSiriWaveformPlayMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPSiriWaveformPlayMusic.app/LPSiriWaveformPlayMusic";
+			};
+			name = Debug;
+		};
+		71FF238F1D096430001C42EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LPSiriWaveformPlayMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.LPSiriWaveformPlayMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPSiriWaveformPlayMusic.app/LPSiriWaveformPlayMusic";
+			};
+			name = Release;
+		};
+		71FF23911D096430001C42EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LPSiriWaveformPlayMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.LPSiriWaveformPlayMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LPSiriWaveformPlayMusic;
+			};
+			name = Debug;
+		};
+		71FF23921D096430001C42EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LPSiriWaveformPlayMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.LPSiriWaveformPlayMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LPSiriWaveformPlayMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71FF235D1D096430001C42EA /* Build configuration list for PBXProject "LPSiriWaveformPlayMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FF23881D096430001C42EA /* Debug */,
+				71FF23891D096430001C42EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71FF238A1D096430001C42EA /* Build configuration list for PBXNativeTarget "LPSiriWaveformPlayMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FF238B1D096430001C42EA /* Debug */,
+				71FF238C1D096430001C42EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71FF238D1D096430001C42EA /* Build configuration list for PBXNativeTarget "LPSiriWaveformPlayMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FF238E1D096430001C42EA /* Debug */,
+				71FF238F1D096430001C42EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71FF23901D096430001C42EA /* Build configuration list for PBXNativeTarget "LPSiriWaveformPlayMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FF23911D096430001C42EA /* Debug */,
+				71FF23921D096430001C42EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71FF235A1D096430001C42EA /* Project object */;
+}

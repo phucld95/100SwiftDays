@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		717481431D0A750200B3C9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717481421D0A750200B3C9F4 /* AppDelegate.swift */; };
+		717481451D0A750200B3C9F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717481441D0A750200B3C9F4 /* ViewController.swift */; };
+		717481481D0A750200B3C9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717481461D0A750200B3C9F4 /* Main.storyboard */; };
+		7174814A1D0A750200B3C9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717481491D0A750200B3C9F4 /* Assets.xcassets */; };
+		7174814D1D0A750200B3C9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7174814B1D0A750200B3C9F4 /* LaunchScreen.storyboard */; };
+		717481581D0A750200B3C9F4 /* testAnimatonWithTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717481571D0A750200B3C9F4 /* testAnimatonWithTouchTests.swift */; };
+		717481631D0A750200B3C9F4 /* testAnimatonWithTouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717481621D0A750200B3C9F4 /* testAnimatonWithTouchUITests.swift */; };
+		EC48AB2372AA06A133CFD974 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1B75B8D59EFBFF75308DBA /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		717481541D0A750200B3C9F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717481371D0A750200B3C9F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7174813E1D0A750200B3C9F4;
+			remoteInfo = testAnimatonWithTouch;
+		};
+		7174815F1D0A750200B3C9F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717481371D0A750200B3C9F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7174813E1D0A750200B3C9F4;
+			remoteInfo = testAnimatonWithTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E1B75B8D59EFBFF75308DBA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		710C4C9B1D0DB56900637E41 /* ido.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ido.m4a; sourceTree = "<group>"; };
+		7174813F1D0A750200B3C9F4 /* testAnimatonWithTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testAnimatonWithTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		717481421D0A750200B3C9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		717481441D0A750200B3C9F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		717481471D0A750200B3C9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		717481491D0A750200B3C9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7174814C1D0A750200B3C9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7174814E1D0A750200B3C9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717481531D0A750200B3C9F4 /* testAnimatonWithTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAnimatonWithTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717481571D0A750200B3C9F4 /* testAnimatonWithTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAnimatonWithTouchTests.swift; sourceTree = "<group>"; };
+		717481591D0A750200B3C9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7174815E1D0A750200B3C9F4 /* testAnimatonWithTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAnimatonWithTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717481621D0A750200B3C9F4 /* testAnimatonWithTouchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAnimatonWithTouchUITests.swift; sourceTree = "<group>"; };
+		717481641D0A750200B3C9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC235C131B12C94674599E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C0744C065FE5224B6BC1FF3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7174813C1D0A750200B3C9F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC48AB2372AA06A133CFD974 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717481501D0A750200B3C9F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7174815B1D0A750200B3C9F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ABE4B1AFF429171D649AEF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAC235C131B12C94674599E2 /* Pods.debug.xcconfig */,
+				C0744C065FE5224B6BC1FF3E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		717481361D0A750200B3C9F4 = {
+			isa = PBXGroup;
+			children = (
+				717481411D0A750200B3C9F4 /* testAnimatonWithTouch */,
+				717481561D0A750200B3C9F4 /* testAnimatonWithTouchTests */,
+				717481611D0A750200B3C9F4 /* testAnimatonWithTouchUITests */,
+				717481401D0A750200B3C9F4 /* Products */,
+				2ABE4B1AFF429171D649AEF4 /* Pods */,
+				CD1A88A049FA518520380F07 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		717481401D0A750200B3C9F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7174813F1D0A750200B3C9F4 /* testAnimatonWithTouch.app */,
+				717481531D0A750200B3C9F4 /* testAnimatonWithTouchTests.xctest */,
+				7174815E1D0A750200B3C9F4 /* testAnimatonWithTouchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		717481411D0A750200B3C9F4 /* testAnimatonWithTouch */ = {
+			isa = PBXGroup;
+			children = (
+				717481421D0A750200B3C9F4 /* AppDelegate.swift */,
+				717481441D0A750200B3C9F4 /* ViewController.swift */,
+				717481461D0A750200B3C9F4 /* Main.storyboard */,
+				710C4C9B1D0DB56900637E41 /* ido.m4a */,
+				717481491D0A750200B3C9F4 /* Assets.xcassets */,
+				7174814B1D0A750200B3C9F4 /* LaunchScreen.storyboard */,
+				7174814E1D0A750200B3C9F4 /* Info.plist */,
+			);
+			path = testAnimatonWithTouch;
+			sourceTree = "<group>";
+		};
+		717481561D0A750200B3C9F4 /* testAnimatonWithTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				717481571D0A750200B3C9F4 /* testAnimatonWithTouchTests.swift */,
+				717481591D0A750200B3C9F4 /* Info.plist */,
+			);
+			path = testAnimatonWithTouchTests;
+			sourceTree = "<group>";
+		};
+		717481611D0A750200B3C9F4 /* testAnimatonWithTouchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				717481621D0A750200B3C9F4 /* testAnimatonWithTouchUITests.swift */,
+				717481641D0A750200B3C9F4 /* Info.plist */,
+			);
+			path = testAnimatonWithTouchUITests;
+			sourceTree = "<group>";
+		};
+		CD1A88A049FA518520380F07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E1B75B8D59EFBFF75308DBA /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7174813E1D0A750200B3C9F4 /* testAnimatonWithTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717481671D0A750200B3C9F4 /* Build configuration list for PBXNativeTarget "testAnimatonWithTouch" */;
+			buildPhases = (
+				DDB48AAD0A41B2E990B69CC0 /* Check Pods Manifest.lock */,
+				7174813B1D0A750200B3C9F4 /* Sources */,
+				7174813C1D0A750200B3C9F4 /* Frameworks */,
+				7174813D1D0A750200B3C9F4 /* Resources */,
+				3FEB236B6B68994025889881 /* Embed Pods Frameworks */,
+				458A0A9FFD5BF5A941297A55 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testAnimatonWithTouch;
+			productName = testAnimatonWithTouch;
+			productReference = 7174813F1D0A750200B3C9F4 /* testAnimatonWithTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		717481521D0A750200B3C9F4 /* testAnimatonWithTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7174816A1D0A750200B3C9F4 /* Build configuration list for PBXNativeTarget "testAnimatonWithTouchTests" */;
+			buildPhases = (
+				7174814F1D0A750200B3C9F4 /* Sources */,
+				717481501D0A750200B3C9F4 /* Frameworks */,
+				717481511D0A750200B3C9F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717481551D0A750200B3C9F4 /* PBXTargetDependency */,
+			);
+			name = testAnimatonWithTouchTests;
+			productName = testAnimatonWithTouchTests;
+			productReference = 717481531D0A750200B3C9F4 /* testAnimatonWithTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7174815D1D0A750200B3C9F4 /* testAnimatonWithTouchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7174816D1D0A750200B3C9F4 /* Build configuration list for PBXNativeTarget "testAnimatonWithTouchUITests" */;
+			buildPhases = (
+				7174815A1D0A750200B3C9F4 /* Sources */,
+				7174815B1D0A750200B3C9F4 /* Frameworks */,
+				7174815C1D0A750200B3C9F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717481601D0A750200B3C9F4 /* PBXTargetDependency */,
+			);
+			name = testAnimatonWithTouchUITests;
+			productName = testAnimatonWithTouchUITests;
+			productReference = 7174815E1D0A750200B3C9F4 /* testAnimatonWithTouchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		717481371D0A750200B3C9F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lê Phúc";
+				TargetAttributes = {
+					7174813E1D0A750200B3C9F4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DJQ98MQWQ5;
+					};
+					717481521D0A750200B3C9F4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DJQ98MQWQ5;
+						TestTargetID = 7174813E1D0A750200B3C9F4;
+					};
+					7174815D1D0A750200B3C9F4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DJQ98MQWQ5;
+						TestTargetID = 7174813E1D0A750200B3C9F4;
+					};
+				};
+			};
+			buildConfigurationList = 7174813A1D0A750200B3C9F4 /* Build configuration list for PBXProject "testAnimatonWithTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 717481361D0A750200B3C9F4;
+			productRefGroup = 717481401D0A750200B3C9F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7174813E1D0A750200B3C9F4 /* testAnimatonWithTouch */,
+				717481521D0A750200B3C9F4 /* testAnimatonWithTouchTests */,
+				7174815D1D0A750200B3C9F4 /* testAnimatonWithTouchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7174813D1D0A750200B3C9F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7174814D1D0A750200B3C9F4 /* LaunchScreen.storyboard in Resources */,
+				7174814A1D0A750200B3C9F4 /* Assets.xcassets in Resources */,
+				717481481D0A750200B3C9F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717481511D0A750200B3C9F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7174815C1D0A750200B3C9F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FEB236B6B68994025889881 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		458A0A9FFD5BF5A941297A55 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDB48AAD0A41B2E990B69CC0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7174813B1D0A750200B3C9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717481451D0A750200B3C9F4 /* ViewController.swift in Sources */,
+				717481431D0A750200B3C9F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7174814F1D0A750200B3C9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717481581D0A750200B3C9F4 /* testAnimatonWithTouchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7174815A1D0A750200B3C9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717481631D0A750200B3C9F4 /* testAnimatonWithTouchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		717481551D0A750200B3C9F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7174813E1D0A750200B3C9F4 /* testAnimatonWithTouch */;
+			targetProxy = 717481541D0A750200B3C9F4 /* PBXContainerItemProxy */;
+		};
+		717481601D0A750200B3C9F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7174813E1D0A750200B3C9F4 /* testAnimatonWithTouch */;
+			targetProxy = 7174815F1D0A750200B3C9F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		717481461D0A750200B3C9F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				717481471D0A750200B3C9F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7174814B1D0A750200B3C9F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7174814C1D0A750200B3C9F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		717481651D0A750200B3C9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		717481661D0A750200B3C9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		717481681D0A750200B3C9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC235C131B12C94674599E2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = testAnimatonWithTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testAnimatonWithTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		717481691D0A750200B3C9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0744C065FE5224B6BC1FF3E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = testAnimatonWithTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testAnimatonWithTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7174816B1D0A750200B3C9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testAnimatonWithTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testAnimatonWithTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testAnimatonWithTouch.app/testAnimatonWithTouch";
+			};
+			name = Debug;
+		};
+		7174816C1D0A750200B3C9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testAnimatonWithTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testAnimatonWithTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testAnimatonWithTouch.app/testAnimatonWithTouch";
+			};
+			name = Release;
+		};
+		7174816E1D0A750200B3C9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = testAnimatonWithTouchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testAnimatonWithTouchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = testAnimatonWithTouch;
+			};
+			name = Debug;
+		};
+		7174816F1D0A750200B3C9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = testAnimatonWithTouchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testAnimatonWithTouchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = testAnimatonWithTouch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7174813A1D0A750200B3C9F4 /* Build configuration list for PBXProject "testAnimatonWithTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717481651D0A750200B3C9F4 /* Debug */,
+				717481661D0A750200B3C9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717481671D0A750200B3C9F4 /* Build configuration list for PBXNativeTarget "testAnimatonWithTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717481681D0A750200B3C9F4 /* Debug */,
+				717481691D0A750200B3C9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7174816A1D0A750200B3C9F4 /* Build configuration list for PBXNativeTarget "testAnimatonWithTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7174816B1D0A750200B3C9F4 /* Debug */,
+				7174816C1D0A750200B3C9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7174816D1D0A750200B3C9F4 /* Build configuration list for PBXNativeTarget "testAnimatonWithTouchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7174816E1D0A750200B3C9F4 /* Debug */,
+				7174816F1D0A750200B3C9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 717481371D0A750200B3C9F4 /* Project object */;
+}

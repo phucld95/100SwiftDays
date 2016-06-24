@@ -2,7 +2,7 @@
 //  Day3_DoingGameWithSwiftUITests.swift
 //  Day3-DoingGameWithSwiftUITests
 //
-//  Created by Le Phuc on 6/9/16.
+//  Created by Le Phuc on 6/15/16.
 //  Copyright © 2016 Lê Phúc. All rights reserved.
 //
 

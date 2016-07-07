@@ -41,88 +41,32 @@ import UIKit
  
  */
 
-public enum AnimationPreset: String {
-    case SlideLeft = "slideLeft"
-    case SlideRight = "slideRight"
-    case SlideDown = "slideDown"
-    case SlideUp = "slideUp"
-    case SqueezeLeft = "squeezeLeft"
-    case SqueezeRight = "squeezeRight"
-    case SqueezeDown = "squeezeDown"
-    case SqueezeUp = "squeezeUp"
-    case FadeIn = "fadeIn"
-    case FadeOut = "fadeOut"
-    case FadeOutIn = "fadeOutIn"
-    case FadeInLeft = "fadeInLeft"
-    case FadeInRight = "fadeInRight"
-    case FadeInDown = "fadeInDown"
-    case FadeInUp = "fadeInUp"
-    case ZoomIn = "zoomIn"
-    case ZoomOut = "zoomOut"
-    case Fall = "fall"
-    case Shake = "shake"
-    case Pop = "pop"
-    case FlipX = "flipX"
-    case FlipY = "flipY"
-    case Morph = "morph"
-    case Squeeze = "squeeze"
-    case Flash = "flash"
-    case Wobble = "wobble"
-    case Swing = "swing"
-}
-
-public enum AnimationCurve: String {
-    case EaseIn = "easeIn"
-    case EaseOut = "easeOut"
-    case EaseInOut = "easeInOut"
-    case Linear = "linear"
-    case Spring = "spring"
-    case EaseInSine = "easeInSine"
-    case EaseOutSine = "easeOutSine"
-    case EaseInOutSine = "easeInOutSine"
-    case EaseInQuad = "easeInQuad"
-    case EaseOutQuad = "easeOutQuad"
-    case EaseInOutQuad = "easeInOutQuad"
-    case EaseInCubic = "easeInCubic"
-    case EaseOutCubic = "easeOutCubic"
-    case EaseInOutCubic = "easeInOutCubic"
-    case EaseInQuart = "easeInQuart"
-    case EaseOutQuart = "easeOutQuart"
-    case EaseInOutQuart = "easeInOutQuart"
-    case EaseInQuint = "easeInQuint"
-    case EaseOutQuint = "easeOutQuint"
-    case EaseInOutQuint = "easeInOutQuint"
-    case EaseInExpo = "easeInExpo"
-    case EaseOutExpo = "easeOutExpo"
-    case EaseInOutExpo = "easeInOutExpo"
-    case EaseInCirc = "easeInCirc"
-    case EaseOutCirc = "easeOutCirc"
-    case EaseInOutCirc = "easeInOutCirc"
-    case EaseInBack = "easeInBack"
-    case EaseOutBack = "easeOutBack"
-    case EaseInOutBack = "easeInOutBack"
-}
 
 
-extension UIView {
-    
-    @IBInspectable public var autostart: Bool = false
-    @IBInspectable public var autohide: Bool = false
-    @IBInspectable public var animation: String = ""
-    @IBInspectable public var force: CGFloat = 1
-    @IBInspectable public var delay: CGFloat = 0
-    @IBInspectable public var duration: CGFloat = 0.7
-    @IBInspectable public var damping: CGFloat = 0.7
-    @IBInspectable public var velocity: CGFloat = 0.7
-    @IBInspectable public var repeatCount: Float = 1
-    @IBInspectable public var x: CGFloat = 0
-    @IBInspectable public var y: CGFloat = 0
-    @IBInspectable public var scaleX: CGFloat = 1
-    @IBInspectable public var scaleY: CGFloat = 1
-    @IBInspectable public var rotate: CGFloat = 0
-    @IBInspectable public var curve: String = ""
-    public var opacity: CGFloat = 1
-    public var animateFrom: Bool = false
+
+
+extension UIColor {
+    func colorWithHexString (hexCode hex:String) -> UIColor {
+        var cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet() as NSCharacterSet).uppercaseString
+        
+        if (cString.hasPrefix("#")) {
+            cString = cString.substringFromIndex(cString.startIndex.advancedBy(1))
+        }
+        
+        if ((cString.characters.count) != 6) {
+            return UIColor.grayColor()
+        }
+        
+        var rgbValue:UInt32 = 0
+        NSScanner(string: cString).scanHexInt(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
     
 }
 

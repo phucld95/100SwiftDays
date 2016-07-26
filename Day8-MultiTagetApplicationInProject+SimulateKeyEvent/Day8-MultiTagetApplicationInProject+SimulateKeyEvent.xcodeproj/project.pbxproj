@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		713E2A9B1D3396CF002E6F85 /* SimulateMouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E2A9A1D3396CF002E6F85 /* SimulateMouse.swift */; };
+		7163D7C81D32B46A00772547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163D7C71D32B46A00772547 /* AppDelegate.swift */; };
+		7163D7CC1D32B46A00772547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7163D7CB1D32B46A00772547 /* Assets.xcassets */; };
+		7163D7CF1D32B46A00772547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7163D7CD1D32B46A00772547 /* Main.storyboard */; };
+		7163D7D71D32B4D400772547 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163D7D51D32B4D400772547 /* MenuView.swift */; };
+		7163D7D81D32B4D400772547 /* MultipeerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163D7D61D32B4D400772547 /* MultipeerClient.swift */; };
+		7163D7E11D33414A00772547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163D7E01D33414A00772547 /* AppDelegate.swift */; };
+		7163D7E31D33414A00772547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163D7E21D33414A00772547 /* ViewController.swift */; };
+		7163D7E61D33414A00772547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7163D7E41D33414A00772547 /* Main.storyboard */; };
+		7163D7E81D33414A00772547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7163D7E71D33414A00772547 /* Assets.xcassets */; };
+		7163D7EB1D33414A00772547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7163D7E91D33414A00772547 /* LaunchScreen.storyboard */; };
+		7163D7F21D33442500772547 /* MultipeerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163D7F11D33442500772547 /* MultipeerClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		713E2A9A1D3396CF002E6F85 /* SimulateMouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulateMouse.swift; sourceTree = "<group>"; };
+		7163D7C41D32B46A00772547 /* Gamepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7163D7C71D32B46A00772547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7163D7CB1D32B46A00772547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7163D7CE1D32B46A00772547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7163D7D01D32B46A00772547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7163D7D51D32B4D400772547 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		7163D7D61D32B4D400772547 /* MultipeerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerClient.swift; sourceTree = "<group>"; };
+		7163D7DE1D33414A00772547 /* GamepadiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamepadiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7163D7E01D33414A00772547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7163D7E21D33414A00772547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7163D7E51D33414A00772547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7163D7E71D33414A00772547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7163D7EA1D33414A00772547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7163D7EC1D33414A00772547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7163D7F11D33442500772547 /* MultipeerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7163D7C11D32B46A00772547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7163D7DB1D33414A00772547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7163D7B91D32B42300772547 = {
+			isa = PBXGroup;
+			children = (
+				7163D7C61D32B46A00772547 /* Gamepad */,
+				7163D7DF1D33414A00772547 /* GamepadiOS */,
+				7163D7C51D32B46A00772547 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7163D7C51D32B46A00772547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7163D7C41D32B46A00772547 /* Gamepad.app */,
+				7163D7DE1D33414A00772547 /* GamepadiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7163D7C61D32B46A00772547 /* Gamepad */ = {
+			isa = PBXGroup;
+			children = (
+				7163D7D91D32B4E500772547 /* Support */,
+				7163D7C71D32B46A00772547 /* AppDelegate.swift */,
+				7163D7D61D32B4D400772547 /* MultipeerClient.swift */,
+				7163D7D51D32B4D400772547 /* MenuView.swift */,
+				713E2A9A1D3396CF002E6F85 /* SimulateMouse.swift */,
+			);
+			path = Gamepad;
+			sourceTree = "<group>";
+		};
+		7163D7D91D32B4E500772547 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				7163D7CD1D32B46A00772547 /* Main.storyboard */,
+				7163D7CB1D32B46A00772547 /* Assets.xcassets */,
+				7163D7D01D32B46A00772547 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		7163D7DF1D33414A00772547 /* GamepadiOS */ = {
+			isa = PBXGroup;
+			children = (
+				7163D7F01D33416300772547 /* Support */,
+				7163D7E01D33414A00772547 /* AppDelegate.swift */,
+				7163D7E21D33414A00772547 /* ViewController.swift */,
+				7163D7F11D33442500772547 /* MultipeerClient.swift */,
+			);
+			path = GamepadiOS;
+			sourceTree = "<group>";
+		};
+		7163D7F01D33416300772547 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				7163D7E91D33414A00772547 /* LaunchScreen.storyboard */,
+				7163D7EC1D33414A00772547 /* Info.plist */,
+				7163D7E71D33414A00772547 /* Assets.xcassets */,
+				7163D7E41D33414A00772547 /* Main.storyboard */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7163D7C31D32B46A00772547 /* Gamepad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7163D7D11D32B46A00772547 /* Build configuration list for PBXNativeTarget "Gamepad" */;
+			buildPhases = (
+				7163D7C01D32B46A00772547 /* Sources */,
+				7163D7C11D32B46A00772547 /* Frameworks */,
+				7163D7C21D32B46A00772547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gamepad;
+			productName = Gamepad;
+			productReference = 7163D7C41D32B46A00772547 /* Gamepad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7163D7DD1D33414A00772547 /* GamepadiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7163D7ED1D33414A00772547 /* Build configuration list for PBXNativeTarget "GamepadiOS" */;
+			buildPhases = (
+				7163D7DA1D33414A00772547 /* Sources */,
+				7163D7DB1D33414A00772547 /* Frameworks */,
+				7163D7DC1D33414A00772547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GamepadiOS;
+			productName = GamepadiOS;
+			productReference = 7163D7DE1D33414A00772547 /* GamepadiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7163D7BA1D32B42300772547 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					7163D7C31D32B46A00772547 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					7163D7DD1D33414A00772547 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7163D7BD1D32B42300772547 /* Build configuration list for PBXProject "Day8-MultiTagetApplicationInProject+SimulateKeyEvent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7163D7B91D32B42300772547;
+			productRefGroup = 7163D7C51D32B46A00772547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7163D7C31D32B46A00772547 /* Gamepad */,
+				7163D7DD1D33414A00772547 /* GamepadiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7163D7C21D32B46A00772547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7163D7CC1D32B46A00772547 /* Assets.xcassets in Resources */,
+				7163D7CF1D32B46A00772547 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7163D7DC1D33414A00772547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7163D7EB1D33414A00772547 /* LaunchScreen.storyboard in Resources */,
+				7163D7E81D33414A00772547 /* Assets.xcassets in Resources */,
+				7163D7E61D33414A00772547 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7163D7C01D32B46A00772547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7163D7C81D32B46A00772547 /* AppDelegate.swift in Sources */,
+				7163D7D71D32B4D400772547 /* MenuView.swift in Sources */,
+				7163D7D81D32B4D400772547 /* MultipeerClient.swift in Sources */,
+				713E2A9B1D3396CF002E6F85 /* SimulateMouse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7163D7DA1D33414A00772547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7163D7E31D33414A00772547 /* ViewController.swift in Sources */,
+				7163D7E11D33414A00772547 /* AppDelegate.swift in Sources */,
+				7163D7F21D33442500772547 /* MultipeerClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7163D7CD1D32B46A00772547 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7163D7CE1D32B46A00772547 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7163D7E41D33414A00772547 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7163D7E51D33414A00772547 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7163D7E91D33414A00772547 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7163D7EA1D33414A00772547 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7163D7BE1D32B42300772547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		7163D7BF1D32B42300772547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		7163D7D21D32B46A00772547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Gamepad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.Gamepad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7163D7D31D32B46A00772547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Gamepad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.Gamepad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7163D7EE1D33414A00772547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linh Dinh (7NT9795327)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Linh Dinh (7NT9795327)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GamepadiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.Gamepad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7163D7EF1D33414A00772547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linh Dinh (7NT9795327)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Linh Dinh (7NT9795327)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GamepadiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.Gamepad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7163D7BD1D32B42300772547 /* Build configuration list for PBXProject "Day8-MultiTagetApplicationInProject+SimulateKeyEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7163D7BE1D32B42300772547 /* Debug */,
+				7163D7BF1D32B42300772547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7163D7D11D32B46A00772547 /* Build configuration list for PBXNativeTarget "Gamepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7163D7D21D32B46A00772547 /* Debug */,
+				7163D7D31D32B46A00772547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7163D7ED1D33414A00772547 /* Build configuration list for PBXNativeTarget "GamepadiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7163D7EE1D33414A00772547 /* Debug */,
+				7163D7EF1D33414A00772547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7163D7BA1D32B42300772547 /* Project object */;
+}

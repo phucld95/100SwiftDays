@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71CE70541D2F99E20015F50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE70531D2F99E20015F50F /* AppDelegate.swift */; };
+		71CE70561D2F99E20015F50F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE70551D2F99E20015F50F /* ViewController.swift */; };
+		71CE70581D2F99E20015F50F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE70571D2F99E20015F50F /* Document.swift */; };
+		71CE705A1D2F99E20015F50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CE70591D2F99E20015F50F /* Assets.xcassets */; };
+		71CE705D1D2F99E20015F50F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CE705B1D2F99E20015F50F /* Main.storyboard */; };
+		71CE70681D2F99E20015F50F /* testMultipeerMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE70671D2F99E20015F50F /* testMultipeerMacOSTests.swift */; };
+		71CE70731D2F99E20015F50F /* testMultipeerMacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE70721D2F99E20015F50F /* testMultipeerMacOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71CE70641D2F99E20015F50F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71CE70481D2F99E20015F50F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71CE704F1D2F99E20015F50F;
+			remoteInfo = testMultipeerMacOS;
+		};
+		71CE706F1D2F99E20015F50F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71CE70481D2F99E20015F50F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71CE704F1D2F99E20015F50F;
+			remoteInfo = testMultipeerMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71CE70501D2F99E20015F50F /* testMultipeerMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testMultipeerMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CE70531D2F99E20015F50F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71CE70551D2F99E20015F50F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71CE70571D2F99E20015F50F /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		71CE70591D2F99E20015F50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71CE705C1D2F99E20015F50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71CE705E1D2F99E20015F50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CE70631D2F99E20015F50F /* testMultipeerMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testMultipeerMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CE70671D2F99E20015F50F /* testMultipeerMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testMultipeerMacOSTests.swift; sourceTree = "<group>"; };
+		71CE70691D2F99E20015F50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CE706E1D2F99E20015F50F /* testMultipeerMacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testMultipeerMacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CE70721D2F99E20015F50F /* testMultipeerMacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testMultipeerMacOSUITests.swift; sourceTree = "<group>"; };
+		71CE70741D2F99E20015F50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71CE704D1D2F99E20015F50F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CE70601D2F99E20015F50F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CE706B1D2F99E20015F50F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71CE70471D2F99E20015F50F = {
+			isa = PBXGroup;
+			children = (
+				71CE70521D2F99E20015F50F /* testMultipeerMacOS */,
+				71CE70661D2F99E20015F50F /* testMultipeerMacOSTests */,
+				71CE70711D2F99E20015F50F /* testMultipeerMacOSUITests */,
+				71CE70511D2F99E20015F50F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71CE70511D2F99E20015F50F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71CE70501D2F99E20015F50F /* testMultipeerMacOS.app */,
+				71CE70631D2F99E20015F50F /* testMultipeerMacOSTests.xctest */,
+				71CE706E1D2F99E20015F50F /* testMultipeerMacOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71CE70521D2F99E20015F50F /* testMultipeerMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				71CE70531D2F99E20015F50F /* AppDelegate.swift */,
+				71CE70551D2F99E20015F50F /* ViewController.swift */,
+				71CE70571D2F99E20015F50F /* Document.swift */,
+				71CE70591D2F99E20015F50F /* Assets.xcassets */,
+				71CE705B1D2F99E20015F50F /* Main.storyboard */,
+				71CE705E1D2F99E20015F50F /* Info.plist */,
+			);
+			path = testMultipeerMacOS;
+			sourceTree = "<group>";
+		};
+		71CE70661D2F99E20015F50F /* testMultipeerMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				71CE70671D2F99E20015F50F /* testMultipeerMacOSTests.swift */,
+				71CE70691D2F99E20015F50F /* Info.plist */,
+			);
+			path = testMultipeerMacOSTests;
+			sourceTree = "<group>";
+		};
+		71CE70711D2F99E20015F50F /* testMultipeerMacOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71CE70721D2F99E20015F50F /* testMultipeerMacOSUITests.swift */,
+				71CE70741D2F99E20015F50F /* Info.plist */,
+			);
+			path = testMultipeerMacOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71CE704F1D2F99E20015F50F /* testMultipeerMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CE70771D2F99E20015F50F /* Build configuration list for PBXNativeTarget "testMultipeerMacOS" */;
+			buildPhases = (
+				71CE704C1D2F99E20015F50F /* Sources */,
+				71CE704D1D2F99E20015F50F /* Frameworks */,
+				71CE704E1D2F99E20015F50F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testMultipeerMacOS;
+			productName = testMultipeerMacOS;
+			productReference = 71CE70501D2F99E20015F50F /* testMultipeerMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71CE70621D2F99E20015F50F /* testMultipeerMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CE707A1D2F99E20015F50F /* Build configuration list for PBXNativeTarget "testMultipeerMacOSTests" */;
+			buildPhases = (
+				71CE705F1D2F99E20015F50F /* Sources */,
+				71CE70601D2F99E20015F50F /* Frameworks */,
+				71CE70611D2F99E20015F50F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71CE70651D2F99E20015F50F /* PBXTargetDependency */,
+			);
+			name = testMultipeerMacOSTests;
+			productName = testMultipeerMacOSTests;
+			productReference = 71CE70631D2F99E20015F50F /* testMultipeerMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71CE706D1D2F99E20015F50F /* testMultipeerMacOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CE707D1D2F99E20015F50F /* Build configuration list for PBXNativeTarget "testMultipeerMacOSUITests" */;
+			buildPhases = (
+				71CE706A1D2F99E20015F50F /* Sources */,
+				71CE706B1D2F99E20015F50F /* Frameworks */,
+				71CE706C1D2F99E20015F50F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71CE70701D2F99E20015F50F /* PBXTargetDependency */,
+			);
+			name = testMultipeerMacOSUITests;
+			productName = testMultipeerMacOSUITests;
+			productReference = 71CE706E1D2F99E20015F50F /* testMultipeerMacOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71CE70481D2F99E20015F50F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lê Phúc";
+				TargetAttributes = {
+					71CE704F1D2F99E20015F50F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					71CE70621D2F99E20015F50F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 71CE704F1D2F99E20015F50F;
+					};
+					71CE706D1D2F99E20015F50F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 71CE704F1D2F99E20015F50F;
+					};
+				};
+			};
+			buildConfigurationList = 71CE704B1D2F99E20015F50F /* Build configuration list for PBXProject "testMultipeerMacOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71CE70471D2F99E20015F50F;
+			productRefGroup = 71CE70511D2F99E20015F50F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71CE704F1D2F99E20015F50F /* testMultipeerMacOS */,
+				71CE70621D2F99E20015F50F /* testMultipeerMacOSTests */,
+				71CE706D1D2F99E20015F50F /* testMultipeerMacOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71CE704E1D2F99E20015F50F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CE705A1D2F99E20015F50F /* Assets.xcassets in Resources */,
+				71CE705D1D2F99E20015F50F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CE70611D2F99E20015F50F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CE706C1D2F99E20015F50F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71CE704C1D2F99E20015F50F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CE70561D2F99E20015F50F /* ViewController.swift in Sources */,
+				71CE70541D2F99E20015F50F /* AppDelegate.swift in Sources */,
+				71CE70581D2F99E20015F50F /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CE705F1D2F99E20015F50F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CE70681D2F99E20015F50F /* testMultipeerMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CE706A1D2F99E20015F50F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CE70731D2F99E20015F50F /* testMultipeerMacOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71CE70651D2F99E20015F50F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71CE704F1D2F99E20015F50F /* testMultipeerMacOS */;
+			targetProxy = 71CE70641D2F99E20015F50F /* PBXContainerItemProxy */;
+		};
+		71CE70701D2F99E20015F50F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71CE704F1D2F99E20015F50F /* testMultipeerMacOS */;
+			targetProxy = 71CE706F1D2F99E20015F50F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71CE705B1D2F99E20015F50F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71CE705C1D2F99E20015F50F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71CE70751D2F99E20015F50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71CE70761D2F99E20015F50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		71CE70781D2F99E20015F50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = testMultipeerMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testMultipeerMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71CE70791D2F99E20015F50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = testMultipeerMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testMultipeerMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71CE707B1D2F99E20015F50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = testMultipeerMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testMultipeerMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testMultipeerMacOS.app/Contents/MacOS/testMultipeerMacOS";
+			};
+			name = Debug;
+		};
+		71CE707C1D2F99E20015F50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = testMultipeerMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testMultipeerMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testMultipeerMacOS.app/Contents/MacOS/testMultipeerMacOS";
+			};
+			name = Release;
+		};
+		71CE707E1D2F99E20015F50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = testMultipeerMacOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testMultipeerMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = testMultipeerMacOS;
+			};
+			name = Debug;
+		};
+		71CE707F1D2F99E20015F50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = testMultipeerMacOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lephuc.testMultipeerMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = testMultipeerMacOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71CE704B1D2F99E20015F50F /* Build configuration list for PBXProject "testMultipeerMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CE70751D2F99E20015F50F /* Debug */,
+				71CE70761D2F99E20015F50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71CE70771D2F99E20015F50F /* Build configuration list for PBXNativeTarget "testMultipeerMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CE70781D2F99E20015F50F /* Debug */,
+				71CE70791D2F99E20015F50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71CE707A1D2F99E20015F50F /* Build configuration list for PBXNativeTarget "testMultipeerMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CE707B1D2F99E20015F50F /* Debug */,
+				71CE707C1D2F99E20015F50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71CE707D1D2F99E20015F50F /* Build configuration list for PBXNativeTarget "testMultipeerMacOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CE707E1D2F99E20015F50F /* Debug */,
+				71CE707F1D2F99E20015F50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71CE70481D2F99E20015F50F /* Project object */;
+}

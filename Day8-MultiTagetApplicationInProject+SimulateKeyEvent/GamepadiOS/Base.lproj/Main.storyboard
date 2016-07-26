@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GamepadiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSU-LF-Edi">
+                                <rect key="frame" x="82" y="71" width="157" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send A keystrocks"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tP-gI-AXr">
+                                <rect key="frame" x="114" y="109" width="92" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="send mouse"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dn-Gs-UQx">
+                                <rect key="frame" x="106" y="147" width="108" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="hole on button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Dn-Gs-UQx" secondAttribute="trailing" constant="90" id="1Xk-5c-Qa1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2tP-gI-AXr" secondAttribute="trailing" constant="98" id="7fM-k4-V1m"/>
+                            <constraint firstItem="0Dn-Gs-UQx" firstAttribute="top" secondItem="2tP-gI-AXr" secondAttribute="bottom" constant="8" id="92d-wV-hnu"/>
+                            <constraint firstAttribute="trailing" secondItem="pSU-LF-Edi" secondAttribute="trailing" constant="81" id="BbL-Rk-7vw"/>
+                            <constraint firstItem="pSU-LF-Edi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="82" id="BbR-CN-Euu"/>
+                            <constraint firstItem="pSU-LF-Edi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="GV4-MD-f9g"/>
+                            <constraint firstItem="0Dn-Gs-UQx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="Mfb-bQ-YJG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Dn-Gs-UQx" secondAttribute="bottom" constant="391" id="Oaa-G6-QZH"/>
+                            <constraint firstItem="2tP-gI-AXr" firstAttribute="top" secondItem="pSU-LF-Edi" secondAttribute="bottom" constant="8" id="aD1-tQ-wFT"/>
+                            <constraint firstItem="2tP-gI-AXr" firstAttribute="top" secondItem="pSU-LF-Edi" secondAttribute="bottom" constant="8" id="cVQ-gi-7eQ"/>
+                            <constraint firstItem="2tP-gI-AXr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="98" id="l16-js-M9E"/>
+                            <constraint firstItem="0Dn-Gs-UQx" firstAttribute="top" secondItem="2tP-gI-AXr" secondAttribute="bottom" constant="8" id="uu4-Ic-tcc"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnAKeysrtocks" destination="pSU-LF-Edi" id="ufr-4P-0nn"/>
+                        <outlet property="btnHoleOnButton" destination="0Dn-Gs-UQx" id="mem-0n-kPT"/>
+                        <outlet property="btnSendMouse" destination="2tP-gI-AXr" id="eUK-Th-OEJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="325"/>
+        </scene>
+    </scenes>
+</document>

@@ -341,7 +341,109 @@ func someFunctionWithEscapingClosure(completionHandler: () -> Void) {
     completionHandlers.append(completionHandler)
 }
 
+/**
+    Lazy stored properties: Một thuộc tính được khai báo như là chưa có giá trị khi được khai báo nhưng sẽ được khởi tạo tại lần sử dụng đầu tiên. Sử dụng lazy stored properties khi mà dữ liệu khởi tạo của 1 thuộc tính là không thể biết trước trước khi mà đối tượng được khởi tạo hoặc sử dụng khi thuộc tính cần phải tính toán cụ thể cho mỗi trường hợp.
+    Cho một ví dụ như sau: Nếu ta có một lớp Person và một personalizedGreeting properties (lời chào cá nhân) thì properties này có thể là một lazily instant sau khi đối tượng được khởi tạo có thể chứa tên của người đó.
+ **/
+
+class Person {
+    
+    var name: String
+    
+    lazy var personalizedGreeting: String = {
+        [unowned self] in
+        return "Hello, \(self.name)!"
+        }()
+    
+    init(name: String) {
+        self.name = name
+    }
+}
+
+let person = Person(name: "Lê Phúc")
+print(person.personalizedGreeting)
+
+
+/// Ở đây chúng ta được làm quen với method class và propeties class trong swift    .
+class student: NSObject {
+    lazy var name: String = student.initStudent()
+    class func initStudent() -> String {
+        return "LePhuc"
+    }
+}
+
+
+/**
+ setter and getter
+ Một kiểu dữ liệu tính toán thì không được lưu một cách trực tiếp trong vùng nhớ. Thay vào đó, swift sử dụng từ khóa "get","set" để sử lý kết quả.
+ được áp dụng cho mỗi thuộc tính. Thuộc tính trong swift thì được chia thành 2 loại đó là: Thuộc tính lưu trữ (Stored properties) lưu các gí trị hằng số và biến số như là một phần của một instance, và thuộc tính tính toán (computed properties) tính toán một giá trị chứ không phải là lưu giá trị. Thuộc tính tính toán được cung cấp bởi các lớp, cấu trúc và kiểu dữ liệu liệt kê. thuộc tính lưu trữ được cung cấp chỉ bởi các lớp và cấu trúc.
+ Setter và getter được áp dụng cho những biến mà chúng ta muốn 2 che giấu, hạn chế truy cập trực tiếp vào biến.
+ 
+ get: Sẽ được gọi tới khi mà thuộc tính được truy cập. Việc người dùng sẽ nhận được gì sẽ là do chúng ta quy định viết trong phương thức này.
+ set: Sẽ lưu lại một dữ liệu (dữ liệu đầu vào này sẽ luôn là newValue). 
+ newValue: đây là một từ khóa đặc biệt. (tên của một biến) chỉ được sử dụng trong phương thức set của một thuộc tính toán.
+ 
+    Chốt hạ lại: Kiểu setter và getter thực chất là 2 phương thức. 2 phương thức này sẽ được viết chung vào 1 closures. và có 1 biến được gán cho cái closures này.
+    
+ 
+ Cách thức khai báo:
+    var tên_biến: Kiểu_dữ_liệu{
+        get{
+        return dữ_liệu (phải dùng Kiểu_dữ_liệu)
+        }
+        set{
+        thực hiện gán dữ liệu, thực hiện các công việc mong muốn.
+        }
+ }
+ **/
+class inhumant {
+    var nameH: NSString
+    
+    var name:NSString {
+        get{
+            return "D.\(self.nameH)"
+        }
+        set{
+            nameH = newValue
+        }
+    }
+    init(){
+        self.nameH = ""
+    }
+}
+
+let data = inhumant()
+data.name = "Le Phuc"
+print(data.name)
 
 
 
-
+struct AlternativeRect {
+    
+    var origin = CGPoint()
+    
+    var size = CGSize()
+    
+    var center: CGPoint {
+        
+        get {
+            
+            let centerX = origin.x + (size.width / 2)
+            
+            let centerY = origin.y + (size.height / 2)
+            
+            return CGPoint(x: centerX, y: centerY)
+            
+        }
+        
+        set {
+            
+            origin.x = newValue.x - (size.width / 2)
+            
+            origin.y = newValue.y - (size.height / 2)
+            
+        }
+        
+    }
+    
+}
